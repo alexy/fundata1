@@ -1,0 +1,20 @@
+I am happy to announce fundata1 -- the largest-ever program per RAM allocation in Haskell, originally implemented in Clojure and then OCaml and Haskell for social network modeling.  
+
+http://github.com/alexy/fundata1
+
+It has now become the first large-scale social networking benchmark with a real dynamic social graph built from the actual Twitter gardenhose, with the data OK'd by Twitter and supplied along with the benchmark.
+
+I wrote three reference implementations, all on github as well.  Clojure and OCaml are quite basic, while Haskell community had a chance to optimize its data structures and in fact fix a GC integer overflow while working on it.  You're welcome to fork and improve all of these implementations, and supply others!
+
+There's a Google Group, 
+
+http://groups.google.com/group/fundata/
+
+to discuss the shootout.  There's also a blog about it and other functional things at
+
+http://functional.tv/
+
+Let the fun begin!
+
+-- Alexy Khrabrov
+firstname.lastnameATgmaildotcom
