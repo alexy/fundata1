@@ -1,9 +1,9 @@
-| waypoint | Clojure | Haskell | OCaml |
+point      | Clojure | Haskell | OCaml |
 -----------|---------|---------|-------|
 load graph | 164 |  52 |   6
 invert it  | 148 |  66 |  55
-user tally | 200 |  28 |  42
- 1  |  11  |  4  |	
+user tally | 200 |  32 |  42
+ 1  |  11  |     |	
  2  |  16  |  5  |	10
  3  |  18  |  9  |	16
  4  |  22  |  9  |	20
