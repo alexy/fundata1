@@ -39,4 +39,8 @@ user tally | 200 |  32 |  42
 34  | 179  | 25  |	35
 35  |  33  | 13  |	31
 save | N/A | 228 |	41
-total | 2808 | 1034 | 1046
+total | 2808 [a][] | 1034 [b][] | 1046 [c][]
+
+* [a]: Clojure result write time is Not Acceptable and is not included in its total
+* [b]: Haskell uses IntMap and interns strings in a Trie, hence writes/reads a dictionary
+* [c]: OCaml does not compress its dump at  the same time as its output, while Haskell does

@@ -12,6 +12,12 @@ The results are in!
 
 [fundata1-results.markdown](fundata1-results.markdown)
 
+The [server specs](fundata1-server.markdown) where the timings were obtained.
+
+Some interesting lessons are being gathered in
+
+[fundata1-lessons.markdown](fundata1-lessons.markdown)
+
 The data format, as distributed, are described in 
 
 [fundata1-replier-graph-format.markdown](fundata1-replier-graph-format.markdown)
@@ -36,16 +42,12 @@ This `git` repository is in fact a supermodule for the three submodules comprisi
 	
 Each of those languages' repos contains further notes on the choices and possible improvements available in their respective implemetations.  Since JVM languages lack an obvious efficient general-purpose serialization, we relax the rules for them a bit.
 	
-The shootout rules and measurements are described in 
-
-	Twitter-Shootout-Rules.md
-	
-The current results are in
-
-	Twitter-Shootout-Results.md
+The machine is a SunFire 4320 server with 64 GB of RAM and 8 CPUs.
 	
 The purpose of having separate repos by language is to facilitate forking and improvement of their implementations, potentially beating other languages.  You're welcome to supply an implementation of the KSC conforming to the rules in other languages, not necessarily functional.  
 
 Some observation on these implementations are posted at [functional.tv](http://functional.tv/)
+
+NOTE: I am submitting my Ph.D. in data mining to UPenn/Dartmouth and am looking for a cool job in the Valley/Seattle, hence my bandwidth in improving my own implementations will be somewhat limited for a while into 2011.  If you have a self-contained implementation installable on CentOS 5 or Gentoo Prefix, or from source with clear steps, I'd be happy to run it, in the Wide Finder spirit.  If you want to speed up the existing implementations, see the [TODO](TODO.markdown).
 
 	
