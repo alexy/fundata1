@@ -4,7 +4,7 @@ fundata1 README
 Karmic Social Capital Benchmark
 -------------------------------
 
-We provide textual documents in the Markdown format.  While being just plain `.txt` documents, they look best when rendered with markdown-aware tools -- e.g. on `github` this `README.markdown` can be seen at [github as fundata1](http://github/alexy/fundata1). 
+We provide textual documents in the Markdown format.  While being just plain `.txt` documents, they look best when rendered with markdown-aware tools -- e.g. on `github` this `README.markdown` can be seen at [http://github.com/alexy/fundata1](http://github.com/alexy/fundata1). 
 
 _FunData_ is a functional data shootout.  The current shootout, the very first one, is for processing real-world Twitter data.
 
