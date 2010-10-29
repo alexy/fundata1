@@ -34,7 +34,7 @@ A textual description of KSC is in
 
 [fundata1-khrabrov-karmic-social-capital.markdown](fundata1-khrabrov-karmic-social-capital.markdown)	
 	
-This `git` repository is in fact a supermodule for the three submodules comprising the currently available three reference functional representations of the KSC algorithm.  Each of them is also hosted on `github`, here in the order of appearance in the target language:
+This `git` repository is in fact an umbrella for the three submodules comprising the currently available three reference functional representations of the KSC algorithm.  Each of them is also hosted on `github`, here in the order of appearance in the target language:
 
 * [Clojure KSC -- _badjer_](http://github.com/alexy/badjer)
 * [Haskell KSC -- _husky_](http://github.com/alexy/husky)
@@ -42,7 +42,7 @@ This `git` repository is in fact a supermodule for the three submodules comprisi
 	
 Each of those languages' repos contains further notes on the choices and possible improvements available in their respective implemetations.  Since JVM languages lack an obvious efficient general-purpose serialization, we relax the rules for them a bit.
 	
-The machine is a SunFire 4320 server with 64 GB of RAM and 8 CPUs.
+The machine is a SunFire 4240 server with 64 GB of RAM and 8 CPUs.
 	
 The purpose of having separate repos by language is to facilitate forking and improvement of their implementations, potentially beating other languages.  You're welcome to supply an implementation of the KSC conforming to the rules in other languages, not necessarily functional.  
 
