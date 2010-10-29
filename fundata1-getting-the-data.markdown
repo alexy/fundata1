@@ -9,7 +9,7 @@ Tokyo Cabinet HDB with each replying `@username` as key, and his/her dynamic adj
 From that, you should be able to produce subsets, and convert them to language-specific storage formats as needed, using the tools provided by each reference implementations.  We provide the first 100,000 subset of _dreps_ sliced off and also ready for loading into each language as follows:
 	
 * `dreps100K.json.hdb` -- the first 100,000 keys of _dreps_, Tokyo Cabinet HDB with raw JSON, uncompressed
-* `dreps100K.clb` -- Tokyo Cabinet of Google Protobuffers with Map extensions from [clojure-protobuf](http://github.com/ninjudd/clojure-protobuf)
+* `dreps100K.clb` -- Tokyo Cabinet of Google Protobuffers with Map extensions from [clojure-protobuf](http://github.com/ninjudd/clojure-protobuf), for the [badjer](http://github.com/alexy/clams) reference implementation
 * `dreps100K.mlb` -- a dump of OCaml Marshal'led graph from the [clams](http://github.com/alexy/clams) reference implementation
 * `dreps100K.hsb.zip` -- a dump of Haskell's graph with strings from the [husky](http://github.com/alexy/husky) reference implementation
 * `dreps100K.int.hsb.zip` -- a dump of Haskell integer graph, with the string nicknames interned in `users100K.dic.hsb.zip` custom two-way dictionary from `husky`
