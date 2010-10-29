@@ -1,3 +1,11 @@
+* the full dynamic replier graph is loaded in the fastest way your language can make it
+* it's inverted for the algorithm to have both from and to versions
+* users are clustered by the first day they got on Twitter
+* 35 days are iterated, updating the Karmic Social Capital
+* the results are written to disk in the fastest way fathomable
+* all times are for each stage in seconds; user tally is mashed together with the first day for Haskell and OCaml
+
+
 point      | Clojure | Haskell | OCaml |
 -----------|---------|---------|-------|
 load graph | 164 |  52 |   6
@@ -44,3 +52,11 @@ total | 2808 [a][] | 1034 [b][] | 1046 [c][]
 * [a]: Clojure result write time is Not Acceptable and is not included in its total
 * [b]: Haskell uses IntMap and interns strings in a Trie, hence writes/reads a dictionary
 * [c]: OCaml does not compress its dump at  the same time as its output, while Haskell does
+
+
+Memory Results
+--------------
+
+* Clojure is the best, running in -Xmx30g with -XX:+UseCompressedOops
+* OCaml fits in about 45 GB
+* Haskell fits in about 50 GB.  Now.
