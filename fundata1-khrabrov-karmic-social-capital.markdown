@@ -1,6 +1,6 @@
 Karmic Social Capital is a strict mathematically defined value for a node in a social network, computed iteratively with each reply edge added to the communication graph.  The complete mathematical definition is provided in
 
-[Alexy Khrabrov and George Cybenko, Mind Economy: Social Capital in Social Networks, European Conference on Complex Systems, Lisbon, 2010](khrabrov-2010-mind-economy-eccs.pdf)
+[Alexy Khrabrov and George Cybenko, Mind Economy: Social Capital in Social Networks, European Conference on Complex Systems, Lisbon, 2010](http://github.com/alexy/fundata1/blob/master/khrabrov-2010-mind-economy-eccs.pdf)
 
 Here's a recap in plain English.
 

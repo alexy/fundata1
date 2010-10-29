@@ -3,3 +3,11 @@ Our original implementation was in Clojure.  Computation was surprisingly fast, 
 We ended up using a Clojure wrapper for [Google Protocol Buffers](http://code.google.com/apis/protocolbuffers/), [clojure-protobuf](github.com/ninjudd/clojure-protobuf) for storing adjacency lists, and [Tokyo Cabinet](http://www.1978th.net/tokyocabinet/) wrapper for storing the protobuf as a value under each @user key. Our adjacency lists have an added layer of days.  We call the input graph _daily repliers_, or _dreps_.   We use [jiraph](http://github.com/ninjudd/jiraph/) to access Tokyo Cabinet from Clojure, and [cake](http://github.com/ninjudd/cake/) to build projects with protobuffers easily -- all great work of `@ninjudd` and `@lancepantz`.
 
 Then _dreps_ loading time drops to about 2 minutes, which is great.  However, writing Tokyo Cabinets may be surprisingly slow on journaling file systems such as `ext3`.  Currently it takes more than half an hour to dump the resulting social capital graph from Clojure, which we report as _N/A_ as it's not usable.
+
+Haskell proved too slow with String Map, so we ended up interning strings and working with an IntMap and a dictionary to disintern back to strings as a last step.  Daniel Fisher was instrumental in bringing Haskell up to speed with OCaml and then beating it.  Don Stewart provided awesome leadership and amazing modification of Haskell's core data structured before your very eyes.
+
+The original Haskell implementation used up all the RAM and crashed.  Simon Marlow of Haskell runtime helped identify a loop in the garbage collector, and then we debugged it together.  There was not a single box in MSR Cambridge UK with 64 GB of RAM, so we ended up renting an Amazon EC2 instance, the largest one, with 68 GB of RAM.  It was an integer overflow in the GC, and KSC was officially the largest ever Haskell program by RAM churn!
+
+I'd like to thank Tim Bray fro the [Wide Finder project](http://www.tbray.org/ongoing/When/200x/2009/12/08/WF-Tuning-Clojure) which inspired benchmarkifying KSC.
+
+This benchmark was first presented at the first-ever [Clojure Conj conference](http://clojure-conj.org/).  Our hope is that Clojure, as the youngest and the most dynamic of these functional languages, will catch up to speed with them all!
