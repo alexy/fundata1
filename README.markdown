@@ -28,7 +28,7 @@ Getting the data is described in the aptly named
 
 The question we're solving is computing Khrabrov and Cybenko's Karmic Social Capital (KSC) for all users communicating via Twitter as present in the data.  The mathematical definition is in the file 
 
-[khrabrov-2010-mind-economy-eccs.pdf](http://github.com/alexy/fundata1/blob/master/khrabrov-2010-mind-economy-eccs.pdf)
+[khrabrov-mind-economy-eccs2010.pdf](http://github.com/alexy/fundata1/blob/master/khrabrov-mind-economy-eccs2010.pdf)
 	
 A textual description of KSC is in 
 
@@ -47,6 +47,8 @@ The machine is a SunFire 4320 server with 64 GB of RAM and 8 CPUs.
 The purpose of having separate repos by language is to facilitate forking and improvement of their implementations, potentially beating other languages.  You're welcome to supply an implementation of the KSC conforming to the rules in other languages, not necessarily functional.  
 
 Some observation on these implementations are posted at [functional.tv](http://functional.tv/).
+
+Join the [Fundata Google Group](http://groups.google.com/group/fundata/) to discuss the shootout and provide alternative implementations.
 
 NOTE: I am submitting my Ph.D. in data mining to UPenn/Dartmouth and am looking for a cool job in the Valley/Seattle, hence my bandwidth in improving my own implementations will be somewhat limited for a while into 2011.  If you have a self-contained implementation installable on CentOS 5 or Gentoo Prefix, or from source with clear steps, I'd be happy to run it, in the Wide Finder spirit.  If you want to speed up the existing implementations, see the [TODO](http://github.com/alexy/fundata1/blob/master/TODO.markdown).
 
